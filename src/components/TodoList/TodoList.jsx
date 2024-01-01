@@ -8,7 +8,7 @@ const TodoList = () => {
   const [task, setTask] = useState('');
 
   // componentDidMount - then dependencies list will be empty
-  useEffect(() => {
+  useEffect(() => { 
     const list = JSON.parse(localStorage.getItem('todoList'));
     setTasks(list || []);
   }, []);
